@@ -1,0 +1,34 @@
+--[[Resources:
+http://how2appbook.com/blog/?p=54
+http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+]]
+
+settings =
+{
+    orientation =
+    {
+        default = "landscapeRight",
+        supported = { "landscapeLeft", "landscapeRight" },
+    },
+        iphone =
+    {
+        plist =
+        {
+            UIApplicationExitsOnSuspend = false,
+            UIPrerenderedIcon = true,
+            UIStatusBarHidden = true,
+            CFBundleIconFiles = {
+            "Icon.png",
+            "Icon@2x.png",
+            "Icon-Small-40.png",
+            "Icon-Small-40@2x.png",
+            "Icon-60.png",
+            "Icon-60@2x.png",
+            "Icon-Small.png",
+            "Icon-Small@2x.png"
+            }
+        },
+
+        skipPNGCrush = false,
+    }
+}
